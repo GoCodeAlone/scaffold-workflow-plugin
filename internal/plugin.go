@@ -1,4 +1,4 @@
-// Package internal implements the workflow-plugin-TEMPLATE plugin.
+// Package internal implements the scaffold-workflow-plugin plugin.
 package internal
 
 import (
@@ -8,7 +8,7 @@ import (
 )
 
 // Version is set at build time via -ldflags
-// "-X github.com/GoCodeAlone/workflow-plugin-TEMPLATE/internal.Version=X.Y.Z".
+// "-X github.com/GoCodeAlone/scaffold-workflow-plugin/internal.Version=X.Y.Z".
 // Default is a bare semver so plugin loaders that validate semver accept
 // unreleased dev builds; goreleaser overrides with the real release tag.
 var Version = "0.0.0"
@@ -26,7 +26,7 @@ func NewPlugin() sdk.PluginProvider {
 // discovery and capability negotiation.
 func (p *TEMPLATEPlugin) Manifest() sdk.PluginManifest {
 	return sdk.PluginManifest{
-		Name:        "workflow-plugin-TEMPLATE",
+		Name:        "scaffold-workflow-plugin",
 		Version:     Version,
 		Author:      "GoCodeAlone",
 		Description: "TEMPLATE plugin for the workflow engine",

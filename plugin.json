@@ -1,48 +1,24 @@
 {
-    "name": "workflow-plugin-TEMPLATE",
-    "version": "0.1.1",
-    "description": "TEMPLATE plugin for the workflow engine",
+    "name": "scaffold-workflow-plugin",
+    "version": "0.0.0",
+    "description": "Scaffold repo for new workflow plugins. NOT an installable plugin — see README for the instantiation flow.",
     "author": "GoCodeAlone",
     "license": "MIT",
-    "type": "external",
+    "type": "scaffold",
     "tier": "community",
     "private": false,
-    "minEngineVersion": "0.51.7",
-    "keywords": [],
-    "homepage": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE",
-    "repository": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE",
+    "minEngineVersion": "0.62.0",
+    "keywords": ["scaffold", "template"],
+    "homepage": "https://github.com/GoCodeAlone/scaffold-workflow-plugin",
+    "repository": "https://github.com/GoCodeAlone/scaffold-workflow-plugin",
     "capabilities": {
         "configProvider": false,
-        "moduleTypes": [],
-        "stepTypes": [],
-        "triggerTypes": []
-    },
-    "contracts": [],
-    "downloads": [
-        {
-            "os": "linux",
-            "arch": "amd64",
-            "url": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE/releases/download/v0.1.0/workflow-plugin-TEMPLATE-linux-amd64.tar.gz"
-        },
-        {
-            "os": "linux",
-            "arch": "arm64",
-            "url": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE/releases/download/v0.1.0/workflow-plugin-TEMPLATE-linux-arm64.tar.gz"
-        },
-        {
-            "os": "darwin",
-            "arch": "amd64",
-            "url": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE/releases/download/v0.1.0/workflow-plugin-TEMPLATE-darwin-amd64.tar.gz"
-        },
-        {
-            "os": "darwin",
-            "arch": "arm64",
-            "url": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE/releases/download/v0.1.0/workflow-plugin-TEMPLATE-darwin-arm64.tar.gz"
-        },
-        {
-            "os": "windows",
-            "arch": "amd64",
-            "url": "https://github.com/GoCodeAlone/workflow-plugin-TEMPLATE/releases/download/v0.1.0/workflow-plugin-TEMPLATE-windows-amd64.tar.gz"
+        "moduleTypes": ["TEMPLATE.module"],
+        "stepTypes": ["TEMPLATE.step"],
+        "triggerTypes": [],
+        "iacProvider": {
+            "resourceTypes": ["TEMPLATE.resource"]
         }
-    ]
+    },
+    "contracts": []
 }
