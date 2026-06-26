@@ -13,12 +13,9 @@
     "repository": "https://github.com/GoCodeAlone/scaffold-workflow-plugin",
     "capabilities": {
         "configProvider": false,
-        "moduleTypes": ["TEMPLATE.module"],
-        "stepTypes": ["TEMPLATE.step"],
-        "triggerTypes": [],
-        "iacProvider": {
-            "resourceTypes": ["TEMPLATE.resource"]
-        }
+        "moduleTypes": [],
+        "stepTypes": [],
+        "triggerTypes": []
     },
     "contracts": []
 }

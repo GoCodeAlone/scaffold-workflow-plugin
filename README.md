@@ -30,9 +30,10 @@ not yet implemented; use the GitHub UI path below.)
    - Resets `plugin.json.type` from `"scaffold"` to `"external"`; sets `.name`.
    - Removes the rename script itself + scaffold-rename-test workflow.
 
-3. **Edit `plugin.json`**: replace `TEMPLATE.module` / `TEMPLATE.step` /
-   `TEMPLATE.resource` placeholder capabilities with your plugin's actual
-   types. Update `minEngineVersion` if you depend on a newer workflow.
+3. **Edit `plugin.json`**: populate `capabilities.moduleTypes`,
+   `capabilities.stepTypes`, and, for IaC plugins, `capabilities.iacProvider`
+   with your plugin's actual types. Update `minEngineVersion` if you depend on
+   a newer workflow.
 
 4. **Implement your plugin** in `internal/`:
    - **non-IaC mode**: extend `internal/plugin.go`'s `NewPlugin()` with
