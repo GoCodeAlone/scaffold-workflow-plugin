@@ -66,6 +66,6 @@ rm -f .github/workflows/scaffold-rename-test.yml
 echo "Renamed to workflow-plugin-$NEW_NAME ($MODE mode)."
 echo "Next steps:"
 echo "  1. Review changes: git status / git diff"
-echo "  2. Edit plugin.json: replace TEMPLATE.* placeholders with real capabilities"
+echo "  2. Edit plugin.json: populate capabilities with real plugin types"
 echo "  3. Commit: git add -A && git commit -m 'feat: initial plugin scaffold'"
 echo "  4. Tag: git tag v0.1.0 && git push origin main v0.1.0"
